@@ -1,0 +1,40 @@
+/* dev help */
+* {
+    border:1px solid black;
+    }
+
+
+* {
+    box-sizing: border-box;
+    }
+
+body {
+        margin: 0;
+      }
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 30%) ;
+    border:1px solid red
+};
+
+
+
+#game{
+    border: 2px solid #FFF;
+    margin :auto;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+;
+}
+
+.centerchild{
+    display: grid;
+    place-items: center;
+  }
+/* NAV */
+.navbar {
+    height: 5em;
+}
