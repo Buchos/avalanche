@@ -32,10 +32,17 @@ class Rocher{
     {
         return this.x+ this.largeur;
     }
-    tomber()
+    tomber(vitesse)
     {
-        this.y += canvas.clientHeight/200;
+
+        this.y += vitesse;
     }
+
+    chute(vitesse)
+    {
+        setInterval(this.tomber(vitesse),1000/50);
+    }
+
     collision(panier)
     {
         if((this.left() <= (panier.x +panier.largeur)) && (this.right()>= panier.x) && (this.bottom()>= panier.y) && (this.top()<= panier.y+panier.hauteur))

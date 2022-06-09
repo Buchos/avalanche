@@ -18,11 +18,11 @@ class Panier{
     {
         if(event.key == "ArrowLeft" && this.x >0)
         {
-            this.x -= 10;
+            this.x -= 15;
         }
         else if(event.key == "ArrowRight" && this.x+this.largeur <canvas.width)
         {
-            this.x += 10;
+            this.x += 15;
         }
     }
 }

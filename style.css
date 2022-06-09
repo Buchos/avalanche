@@ -1,40 +1,46 @@
 /* dev help */
 * {
-    border:1px solid black;
-    }
-
-
-* {
-    box-sizing: border-box;
-    }
-
-body {
-        margin: 0;
-      }
-
-.parent {
-    display: grid;
-    grid-template-columns: 1fr minmax(150px, 30%) ;
-    border:1px solid red
-};
-
-
-
-#game{
-    border: 2px solid #FFF;
-    margin :auto;
-    top:0;
-    right:0;
-    left:0;
-    bottom:0;
-;
+	border: 1px solid black;
 }
 
-.centerchild{
-    display: grid;
-    place-items: center;
-  }
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Press Start 2P", cursive;
+}
+
+body {
+	margin: 0;
+	font-family: "Press Start 2P", cursive;
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: 1fr minmax(150px, 30%);
+	border: 1px solid red;
+}
+
+.centerchild {
+	background-image: url("https://thumbs.dreamstime.com/b/arcade-machine-screen-112042756.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top 60% center;
+}
+
+#game {
+	border: 2px solid #fff;
+	margin: auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.centerchild {
+	display: grid;
+	place-items: center;
+}
 /* NAV */
 .navbar {
-    height: 5em;
+	height: 5em;
 }
